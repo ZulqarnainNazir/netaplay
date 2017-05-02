@@ -9,7 +9,7 @@ var config = {
       name: 'jawad'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://localhost/jawad-development'
+    db: 'postgres://admin12:admin@localhost:5432/netplay'
   },
 
   test: {
@@ -27,7 +27,7 @@ var config = {
       name: 'jawad'
     },
     port: process.env.PORT || 3000,
-    db: 'postgres://localhost/jawad-production'
+    db: 'postgres://avelflypvnkmbk:ee184873cbb88bcca73233620cbb5147b7684b3dd1f8e9e0cf333ac7cc224d49@ec2-54-243-252-91.compute-1.amazonaws.com:5432/d9f267t1b1384v'
   }
 };
 
