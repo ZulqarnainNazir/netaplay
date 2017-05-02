@@ -3,10 +3,11 @@
 
 module.exports = function (sequelize, DataTypes) {
 
-  var Article = sequelize.define('Article', {
-    title: DataTypes.STRING,
-    url: DataTypes.STRING,
-    text: DataTypes.STRING
+  var User = sequelize.define('User', {
+    password: DataTypes.STRING,
+    network: DataTypes.STRING,
+    network_type: DataTypes.STRING,
+    number:  { type: DataTypes.STRING,  unique: 'compositeIndex'}
   }, {
     classMethods: {
       associate: function (models) {
@@ -16,6 +17,6 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
 
-  return Article;
+  return User;
 };
 
